@@ -121,7 +121,22 @@ ul {
 
 /* Заказ услуг */
 .order {
-  background: var(--background-color-secondary);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: var(--background-color-secondary); */
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -175,9 +190,30 @@ ul {
 .features {
   display: flex;
 }
-
 .features-item {
   flex-basis: calc(100% / 4);
+}
+.features-item::before {
+  display: block;
+  content: "";
+  background-color: var(--bachgroun-button-portfolio);
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+  height: 120px;
+  border-radius: 4px;
+}
+.features-item:nth-child(1)::before {
+  background-image: url(../image/features1.png);
+}
+.features-item:nth-child(2)::before {
+  background-image: url(../image/features2.png);
+}
+.features-item:nth-child(3)::before {
+  background-image: url(../image/features3.png);
+}
+.features-item:nth-child(4)::before {
+  background-image: url(../image/features4.png);
 }
 
 .features-item:not(:last-child) {
@@ -292,12 +328,12 @@ ul {
   cursor: pointer;
 }
 
-
 .navigation-btn:focus,
 .navigation-btn:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .navigation-space:not(:last-child) {
   margin-right: 10px;
@@ -308,12 +344,15 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--section-services-gap));
   margin-top: calc(-1 * var(--section-services-gap));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .services-item {
   flex-basis: calc(100% / 3 - var(--section-services-gap));
   margin-left: var(--section-services-gap);
   margin-top: var(--section-services-gap);
+
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 .services-content {
   padding: 20px 24px;
