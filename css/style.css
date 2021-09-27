@@ -157,7 +157,6 @@ ul {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  /* background: var(--background-color-secondary); */
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -198,7 +197,7 @@ ul {
   margin-top: 30px;
 }
 
-/* наше преимущество------ */
+/*------------ наше преимущество------ */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -218,14 +217,32 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.features-icon-list {
+  display: flex;
+}
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--bachgroun-button-portfolio);
+  width: 270px;
+  height: 120px;
+}
+
+.features-icon:not(:last-child) {
+  margin-right: var(--section-services-gap);
+}
 
 .features {
   display: flex;
+  margin-top: var(--section-services-gap);
 }
 .features-item {
   flex-basis: calc(100% / 4);
 }
-.features-item::before {
+
+/* .features-item::before {
   display: block;
   content: "";
   background-color: var(--bachgroun-button-portfolio);
@@ -234,8 +251,8 @@ ul {
   background-position: center;
   height: 120px;
   border-radius: 4px;
-}
-.features-item:nth-child(1)::before {
+} */
+/* .features-item:nth-child(1)::before {
   background-image: url(../image/features1.png);
 }
 .features-item:nth-child(2)::before {
@@ -246,7 +263,7 @@ ul {
 }
 .features-item:nth-child(4)::before {
   background-image: url(../image/features4.png);
-}
+}  */
 
 .features-item:not(:last-child) {
   margin-right: var(--section-services-gap);
