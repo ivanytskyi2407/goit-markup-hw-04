@@ -105,6 +105,7 @@ ul {
 .icon-mail,
 .icon-smartphone {
   fill: currentColor;
+  margin-right: 10px;
 }
 .icon-list {
   display: flex;
