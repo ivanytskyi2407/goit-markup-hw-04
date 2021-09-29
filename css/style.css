@@ -110,20 +110,21 @@ ul {
 .icon-list {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
+}
+.icon-item:not(:last-child) {
+  margin-right: 10px;
 }
 .icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   border-radius: 22px;
   height: 44px;
   width: 44px;
   background-color: var(--primary-white-color);
   fill: var(--icon-background);
-}
-.icon-link:not(:last-child) {
-  margin-right: 16px;
 }
 
 .icon-link:hover,
@@ -135,6 +136,7 @@ ul {
 /* Header contacts */
 .header-contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -142,6 +144,8 @@ ul {
   margin-left: 50px;
 }
 .header-contacts-link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -220,9 +224,7 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.features-icon-list {
-  display: flex;
-}
+
 .features-icon {
   display: flex;
   justify-content: center;
@@ -233,10 +235,6 @@ ul {
   height: 120px;
 }
 
-.features-icon:not(:last-child) {
-  margin-right: var(--section-services-gap);
-}
-
 .features {
   display: flex;
   margin-top: var(--section-services-gap);
@@ -244,29 +242,6 @@ ul {
 .features-item {
   flex-basis: calc(100% / 4);
 }
-
-/* .features-item::before {
-  display: block;
-  content: "";
-  background-color: var(--bachgroun-button-portfolio);
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  background-position: center;
-  height: 120px;
-  border-radius: 4px;
-} */
-/* .features-item:nth-child(1)::before {
-  background-image: url(../image/features1.png);
-}
-.features-item:nth-child(2)::before {
-  background-image: url(../image/features2.png);
-}
-.features-item:nth-child(3)::before {
-  background-image: url(../image/features3.png);
-}
-.features-item:nth-child(4)::before {
-  background-image: url(../image/features4.png);
-}  */
 
 .features-item:not(:last-child) {
   margin-right: var(--section-services-gap);
@@ -364,6 +339,7 @@ ul {
 }
 .footer-block {
   display: flex;
+  align-items: baseline;
 }
 .footer-address {
   margin-right: 70px;
@@ -375,12 +351,14 @@ ul {
   display: flex;
   margin-top: 20px;
 }
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
 
 .footer-soc-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   border-radius: 22px;
   height: 44px;
   width: 44px;
